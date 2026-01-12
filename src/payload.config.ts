@@ -85,6 +85,7 @@ export default buildConfig({
         pass: process.env.SMTP_PASS,
       },
     },
+    skipVerify: true, //THIS IS REQUIRED ON RENDER / NETLIFY
   }),
   collections: [
     Pages,
