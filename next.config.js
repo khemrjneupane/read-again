@@ -9,6 +9,7 @@ const cfUrl = process.env.CLOUDFLARE_IMAGE_URL
 const cfHost = cfUrl ? new URL(cfUrl).hostname : null
 
 const nextConfig = {
+  output: 'standalone',
   images: {
     minimumCacheTTL: 2678400,
     formats: ['image/webp'],
